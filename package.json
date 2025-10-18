@@ -15,6 +15,8 @@
         "preview:cf": "npx @opennextjs/cloudflare preview",
         "deploy": "npx @opennextjs/cloudflare deploy",
         "deploy:preview": "npx @opennextjs/cloudflare deploy --env preview",
+        "deploy:preview:proxy": "HTTP_PROXY=http://127.0.0.1:7890 HTTPS_PROXY=http://127.0.0.1:7890 npx @opennextjs/cloudflare deploy --env preview",
+        "deploy:proxy": "HTTP_PROXY=http://127.0.0.1:7890 HTTPS_PROXY=http://127.0.0.1:7890 npx @opennextjs/cloudflare deploy",
         "db:generate": "drizzle-kit generate",
         "db:generate:named": "drizzle-kit generate --name",
         "db:migrate:local": "wrangler d1 migrations apply next-cloudflare --local",

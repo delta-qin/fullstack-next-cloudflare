@@ -16,7 +16,6 @@ declare namespace Cloudflare {
 		AUTH_GITHUB_SECRET: string;
 		next_cf_app_bucket: R2Bucket;
 		next_cf_app: D1Database;
-		VECTORIZE: VectorizeIndex;
 		AI: Ai;
 		ASSETS: Fetcher;
 	}
