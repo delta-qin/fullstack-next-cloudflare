@@ -25,6 +25,7 @@ async function getAuth() {
 
     cachedAuth = betterAuth({
         secret: env.BETTER_AUTH_SECRET,
+        baseURL: env.BETTER_AUTH_URL,
         database: drizzleAdapter(db, {
             provider: "sqlite",
         }),
@@ -36,6 +37,11 @@ async function getAuth() {
                 enabled: true,
                 clientId: env.GOOGLE_CLIENT_ID!,
                 clientSecret: env.GOOGLE_CLIENT_SECRET!,
+            },
+            github: {
+                enabled: true,
+                clientId: env.AUTH_GITHUB_ID!,
+                clientSecret: env.AUTH_GITHUB_SECRET!,
             },
         },
         plugins: [nextCookies()],

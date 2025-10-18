@@ -12,6 +12,8 @@ declare namespace Cloudflare {
 		BETTER_AUTH_URL: string;
 		GOOGLE_CLIENT_ID: string;
 		GOOGLE_CLIENT_SECRET: string;
+		AUTH_GITHUB_ID: string;
+		AUTH_GITHUB_SECRET: string;
 		next_cf_app_bucket: R2Bucket;
 		next_cf_app: D1Database;
 		VECTORIZE: VectorizeIndex;
