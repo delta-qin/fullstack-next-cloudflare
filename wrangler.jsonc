@@ -26,7 +26,7 @@
     "r2_buckets": [
         {
             "bucket_name": "next-cloudflare",
-			"binding": "next_cf_app_bucket"
+            "binding": "next_cf_app_bucket"
         }
     ],
     "ai": {
